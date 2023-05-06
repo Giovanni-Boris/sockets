@@ -9,8 +9,7 @@ public class MainRunnable implements Runnable {
 
     public static void main(String[] args) {
         Cliente cliente1 = new Cliente("Cliente1");
-        Cliente cliente2 = new Cliente("Cliente2");
-        System.out.println("Creo dos clientes");
+        Cliente cliente2 = new Cliente("Cliente1");
         Runnable proceso1 = new MainRunnable(cliente1);
         Runnable proceso2 = new MainRunnable(cliente2);
         new Thread(proceso1).start();
